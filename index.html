@@ -4,36 +4,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kasha Decor Responsive HTML Email Template</title>
+    <title>World Diabetes Day</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <style type="text/css">
-      /* Regular font */
-      @font-face {
-        font-family: "Apis";
-        src: url("data:font/ttf;base64,BASE64_ENCODED_REGULAR")
-          format("truetype");
-        font-weight: normal;
-        font-style: normal;
-      }
-
-      /* Bold font */
-      @font-face {
-        font-family: "Apis";
-        src: url("data:font/ttf;base64,BASE64_ENCODED_BOLD") format("truetype");
-        font-weight: bold;
-        font-style: normal;
-      }
-
-      /* Black font */
-      @font-face {
-        font-family: "Apis";
-        src: url("data:font/ttf;base64,BASE64_ENCODED_BLACK") format("truetype");
-        font-weight: 900; /* Black font typically uses 900 weight */
-        font-style: normal;
-      }
       body {
-        font-family: "Apis", Arial, sans-serif;
-
+        font-family: "Noto Sans", Arial, Helvetica, sans-serif;
         margin: 0;
       }
       table {
@@ -49,28 +31,64 @@
       .wrapper {
         width: 100%;
         table-layout: fixed;
-        background: #f1f1f1;
         padding-bottom: 60px;
       }
       .main {
         width: 100%;
         max-width: 600px;
         background: #fff;
-        font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+        font-family: "Noto Sans", Arial, Helvetica, sans-serif;
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.26);
         text-align: center;
+        padding-top: 49px;
+        overflow: hidden;
       }
-      .three-columns {
+      h1.header {
+        color: #001965;
+        font-size: 44px;
+        font-weight: 800;
       }
-      .three-columns .column {
+      .bolded {
+        font-weight: 800;
       }
-      .three-columns .padding {
+      p {
+        color: #001965;
+        font-weight: normal;
+        line-height: 32px;
+        margin: 10px 0;
       }
-      .three-columns .content {
+      .item {
+        display: inline-block;
+        width: 495px;
       }
-      h3 {
+      .left-img,
+      .right-img {
+        width: 48px;
+        position: absolute;
       }
-      .button {
+      .left-img {
+        left: -76px;
+      }
+      .right-img {
+        right: 30px;
+      }
+      .circle-bg {
+      }
+      .two-cols-data {
+        padding: 43px 0 25px;
+      }
+      .two-cols-data .column {
+        width: 100%;
+        max-width: 290px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 0;
+      }
+      .two-cols-data .padding {
+        padding: 0 15px;
+      }
+      .two-cols-data .content {
+        font-size: 22px;
       }
     </style>
   </head>
@@ -78,9 +96,129 @@
     <center class="wrapper">
       <table class="main" width="100%">
         <!-- LOGO -->
-        <h1>hello</h1>
-        <!-- THREE COLUMN SECTION -->
+        <tr>
+          <td>
+            <a href="#"
+              ><img
+                src="./imgs/header.png"
+                alt="World Diabetes Day"
+                width="400"
+                style="max-width: 100%"
+            /></a>
+          </td>
+        </tr>
+        <!--  SEC COLUMN SECTION -->
+        <tr>
+          <td>
+            <h1 class="header">WORLD DIABETES DAY</h1>
+          </td>
+        </tr>
+        <!-- header data -->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td style="position: relative">
+                  <table class="item left-img">
+                    <tr>
+                      <td>
+                        <img class="circle-bg" src="./imgs/circle.png" alt="" />
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="item">
+                    <tr>
+                      <td>
+                        <p style="font-size: 22px">
+                          As we approach World Diabetes Day on November 14
+                          <small>th</small>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
 
+                  <table class="item right-img">
+                    <tr>
+                      <td>
+                        <img class="circle-bg" src="./imgs/circle.png" alt="" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- THREE COLUMN SECTION -->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="two-cols-data">
+                  <!-- first col -->
+                  <table class="column">
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+                          <tr>
+                            <td>
+                              <img
+                                src="./imgs/01.png"
+                                width="200"
+                                height="91"
+                                alt=""
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>
+                                of <span class="bolded">Saudi</span> patients
+                                with diabetes
+                                <span class="bolded">are unaware</span> of their
+                                disease2
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- sec col -->
+                  <table class="column">
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+                          <tr>
+                            <td>
+                              <img
+                                src="./imgs/02.png"
+                                width="200"
+                                height="91"
+                                alt=""
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>
+                                <span class="bolded">Cardiovascular</span> and
+                                <span class="bolded">renal</span> complications
+                                are the main cause of
+                                <span class="bolded">death</span> in people with
+                                diabetes worldwide1
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
         <!-- COUPON SECTION -->
 
         <!-- FOOTER SECTION -->
